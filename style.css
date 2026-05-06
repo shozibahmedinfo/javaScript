@@ -4,9 +4,13 @@ a{text-decoration: none;}
 
 .full_container{width: 100%;}
 .container{width: 1080px; margin: 0 auto;}
-
+/* This is a style css */
 .container h1{
     text-align: center;
     margin-top: 40px;
 }
 .container p{text-align: center;}
+#read{ /* h1 tage center javascript output print */
+    text-align: center;
+    margin-top: 20px;
+}
