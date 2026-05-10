@@ -56,13 +56,6 @@ function notes(){ // The javaScript logical No operators (!)
     document.getElementById("read").innerHTML=!isFollow;
 };
 // notes();
-
-
-
-
-
-
-
 function collegeId(){ // The javaScript object student id collection
     const student = {
         fullName: "Shozib Ahmed",
@@ -84,3 +77,64 @@ function socialProfile(){ // QS=1 create a const object called Profile to store 
     document.getElementById("read").innerHTML=profile["follow"];
 };
 // socialProfile();
+function ifs(){ // The javaScript Conditional (if-else) statements
+    let age = 18;
+    if(age >= 18){
+        document.getElementById("read").innerHTML="Vote";
+    } else{
+        document.getElementById("read").innerHTML="Not vote";
+    }
+};
+// ifs();
+function orde(){ // The javaScript even odd number if-else conditional statements
+    let numb = 10;
+    if(numb % 2 === 0){
+        document.getElementById("read").innerHTML="Even number";
+    } else{
+        document.getElementById("read").innerHTML="Odd number";
+    }
+};
+// orde();
+ function elsi(){ // The javaScript else-if conditional statement
+    let age = 60;
+    if(age <= 18){
+        document.getElementById("read").innerHTML="Junior";
+    } else if(age >= 60){
+        document.getElementById("read").innerHTML="Senior";
+    } else{ 
+        document.getElementById("read").innerHTML="Middie"
+    }
+ };
+//  elsi();
+function ter(){ // The javaScript terators operatores Condition ? true output : false output
+    let age = 10;
+    let result = age > 18 ? "Adult" : "Not adult";
+    document.getElementById("read").innerHTML=result;
+};
+// ter();
+function prom(){ // The javaScript get user to in to input a number using promt("Enter a number")
+    let point = prompt("Enter a number");
+    if(point % 5 === 0){
+        document.getElementById("read").innerHTML="Number is a miltipul of 5";
+    } else{
+        document.getElementById("read").innerHTML="Number is a not miltipul of 5";
+    }
+};
+// prom();
+function student(){ // The javaScript Qs student mark gride point
+    let mark = prompt("Enter a mark:")
+    if(mark >= 80 && mark <=100){
+        document.getElementById("read").innerHTML="A+";
+    } else if(mark >= 60 && mark <=79){
+        document.getElementById("read").innerHTML="B";
+    } else if(mark >= 50 && mark <= 59){
+        document.getElementById("read").innerHTML="C"
+    } else if(mark >= 33 && mark <= 49){
+        document.getElementById("read").innerHTML="D"
+    }else if(mark >= 1 && mark <= 32){
+        document.getElementById("read").innerHTML="F"
+    } else{
+        document.getElementById("read").innerHTML="Oop Erro";
+    }
+};
+// student();
