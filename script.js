@@ -121,7 +121,7 @@ function prom(){ // The javaScript get user to in to input a number using promt(
     }
 };
 // prom();
-function student(){ // The javaScript Qs student mark gride point
+function student(){ // The javaScript Qs student mark gride point multiple conditiones && opeators
     let mark = prompt("Enter a mark:")
     if(mark >= 80 && mark <=100){
         document.getElementById("read").innerHTML="A+";
@@ -138,3 +138,73 @@ function student(){ // The javaScript Qs student mark gride point
     }
 };
 // student();
+function flo(){ // The javaScript for-loop are used to execute a price of code again & again
+    let output = "";
+    let i;
+    for(i = 1; i <= 10; i++){
+        output += i+ "Shozib Ahmed <br>";
+    }
+    document.getElementById("read").innerHTML=output;
+};
+// flo();
+function whi(){ // The javaScript while loop conditional statements
+    let output = "";
+    let i = 1;
+    while(i <= 10){
+        output += i+"Welcome <br>";
+        i++;
+    }
+    document.getElementById("read").innerHTML=output;
+};
+// whi();
+function dow(){
+    let output = "";
+    let i = 1;
+    do{
+        output += i+"Do while loop <br>";
+        i++;
+    } while(i <= 10);
+    document.getElementById("read").innerHTML=output;
+};
+// dow();
+function foroff(){ // The javaScript for-of loop iterator -> characters
+    let output = "";
+    let str = "JavaScript";
+    for(let i of str){
+        output += i+"<br>";
+    }
+    document.getElementById("read").innerHTML=output;
+};
+// foroff();
+function fin(){ // The javaScript for-in loop key & value
+    let output = "";
+    const bike = {name:"R1", cc:1000, topSpeed:300, rodpermit:true,};
+    for(let i in bike){
+        output += i+"<br>"; // output key 
+        // output += bike[i]+"<br>"; // output value
+    }
+    document.getElementById("read").innerHTML=output;
+};
+// fin();
+function qs(){ // Qs1: Print all even numbers from 0 to 100 conditional statements
+    let output = "";
+    for(i = 0; i <= 100; i++){
+        if(i %2 === 0){
+            document.getElementById("read").innerHTML=i;
+            output += i+ "Even Number<br>";
+        }
+    }
+    document.getElementById("read").innerHTML=output;
+};
+// qs();
+function qs2(){ // Qs2: Ask Game number user to keep guessing the game number
+    let gameNum = 25;
+    let userNum = prompt("Enter you Game number:");
+    while(userNum != gameNum){
+        userNum = prompt("Enter your worng number: Guess again:")
+    }
+    document.getElementById("read").innerHTML="Welcome to game";
+};
+// qs2();
+
+
