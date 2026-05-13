@@ -122,7 +122,7 @@ function prom(){ // The javaScript get user to in to input a number using promt(
 };
 // prom();
 function student(){ // The javaScript Qs student mark gride point multiple conditiones && opeators
-    let mark = prompt("Enter a mark:")
+    let mark = prompt("Enter a mark:");
     if(mark >= 80 && mark <=100){
         document.getElementById("read").innerHTML="A+";
     } else if(mark >= 60 && mark <=79){
@@ -176,7 +176,7 @@ function foroff(){ // The javaScript for-of loop iterator -> characters
     document.getElementById("read").innerHTML=output;
 };
 // foroff();
-function fin(){ // The javaScript for-in loop key & value
+function fin(){ // The javaScript for-in loop object key & value 
     let output = "";
     const bike = {name:"R1", cc:1000, topSpeed:300, rodpermit:true,};
     for(let i in bike){
@@ -201,10 +201,17 @@ function qs2(){ // Qs2: Ask Game number user to keep guessing the game number
     let gameNum = 25;
     let userNum = prompt("Enter you Game number:");
     while(userNum != gameNum){
-        userNum = prompt("Enter your worng number: Guess again:")
+        userNum = prompt("Enter your worng number: Guess again:");
     }
     document.getElementById("read").innerHTML="Welcome to game";
 };
 // qs2();
-
-
+function str(){ // The JavaScript string is a sequence of characters used to represent text
+    let output = "";
+    let name = "Shozib Ahmed";
+    // output += name.length; // String length
+    // output += typeof name; // String
+    output += name[4]; // i
+    document.getElementById("read").innerHTML=output;
+};
+// str();
