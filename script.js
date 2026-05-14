@@ -215,3 +215,64 @@ function str(){ // The JavaScript string is a sequence of characters used to rep
     document.getElementById("read").innerHTML=output;
 };
 // str();
+function toUpe(){ // The JavaScript string.toUpperCase built-in string method
+    let country = "Bangladesh";
+    let name =country.toUpperCase();
+    document.getElementById("read").innerHTML=name;
+};
+// toUpe();
+function tolow(){ // The JavaScript string.toLowerCase built-in string method
+    let country = "BANGLADESH";
+    let name = country.toLowerCase();
+    document.getElementById("read").innerHTML=name;
+};
+// tolow();
+function remv(){ // The JavaScript string.trim(); remove Stating & End whitespace
+    let country = "    Bangladesh   "
+    let name = country.trim();
+    document.getElementById("read").innerHTML=name;
+};
+// remv();
+function sli(){ // The JavaScript stirng.slice()
+    let couName = "Bangladesh";
+    let output = couName.slice(3,7);
+    document.getElementById("read").innerHTML=output;
+};
+// sli();
+function cong(){ // The JavaScript string.concat() joins stirng1 with string2
+    let fastName = "Shozib";
+    let lastName = "Ahmed";
+    let output = fastName.concat(lastName);
+    document.getElementById("read").innerHTML=output;
+};
+// cong();
+function rep(){ // The JavaScript string.replace() searchValu change new valu
+    let name = "Shozib Ahmed";
+    let output = name.replace("z","j");
+    document.getElementById("read").innerHTML=output;
+};
+// rep();
+function char(){ // The JavaScript string.charAt() index value
+    let name = "Shozib Ahmed";
+    let output = name.charAt(3);
+    document.getElementById("read").innerHTML=output;
+};
+// char();
+function use(){ // Qs1 The javaScript prompt input username stirng methods output @username8
+    let userName = prompt("Enter you Name:");
+    let output = "@" + userName + userName.length;
+    document.getElementById("read").innerHTML=output;
+};
+// use();
+
+
+
+
+
+
+
+
+
+
+
+
