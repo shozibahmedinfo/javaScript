@@ -264,15 +264,86 @@ function use(){ // Qs1 The javaScript prompt input username stirng methods outpu
     document.getElementById("read").innerHTML=output;
 };
 // use();
-
-
-
-
-
-
-
-
-
-
-
-
+function arr(){ // The JavaScript array collections of items with index values
+    let addr = ["Bheramara","Kushtia","Dhaka","Bangladesh"];
+    document.getElementById("read").innerHTML=addr[3];
+};
+// arr();
+function ler(){ // The JavaScript array indices collections of items with linear
+    let mark = [20,37,40,58,79,87,90,100];
+    document.getElementById("read").innerHTML= mark[3];
+};
+// ler();
+function arfo(){ // The JavaScript looping for over an Array print all elements of an array
+    let output = "";
+    let addr = ["Bheramara","Kushtia","Dhaka","Bangladesh"];
+    let i;
+    for(i = 0; i < addr.length; i++){
+        output += addr[i]+"<br>";
+    }
+    document.getElementById("read").innerHTML=output;
+};
+// arfo();
+function foro(){ // The javaScript For-of loop over an Array print all elements
+    let output = "";
+    let city = ["Bheramara","Kushtia","Dhaka","Bangladesh"];
+    let i;
+    for(i of city){
+        output += i+"<br>";
+    }
+    document.getElementById("read").innerHTML=output;
+};
+// foro();
+function stmar(){ // Qs1 [23,43,79,98,89] 10% offer, Array to store final price applying
+    let output = "";
+    let itame = [23,43,79,98,89];
+    for(i = 0; i < itame.length; i++){
+        let offer = itame[i] / 10; // 10% discount
+        itame[i] -= offer;
+    }
+    document.getElementById("read").innerHTML=itame;
+};
+// stmar();
+function arrapu(){ // The JavaScript Array itme.push() method add to end element
+    let city = ["Bheramara","Kushait","Rajshahi","Kumarkhale"];
+    city.push("Dhaka","Motijheel");
+    // city.unshift("Dhaka"); //itme.unshift() method add to start element
+    document.getElementById("read").innerHTML=city;
+};
+// arrapu();
+function arrapop(){ // The JavaScript Array itme.pop() remove from End itames & return
+    let city = ["Bheramara","Kushait","Rajshahi","Kumarkhale"];
+    city.pop();
+    // city.shift(); //itme.pop() remove from Start itames & return
+    document.getElementById("read").innerHTML=city;
+};
+// arrapop();
+function conarr(){ // Array itame.concat() method joins multipule arrays & returns result
+    let city = ["Bheramara","Kushait","Rajshahi","Kumarkhale"];
+    let othcity = ["Dhaka","Motijheel"];
+    let output = city.concat(othcity);
+    document.getElementById("read").innerHTML=output;
+};
+// conarr();
+function sli(){ // The javascript Array itme.slice(1,4) method index value slice returns
+    const point = [20,30,40,50,60,70,80];
+    let output = point.slice(1,4); // (Stating index & End index)
+    document.getElementById("read").innerHTML=output;
+};
+// sli();
+function spli(){ // The javaScript Array itme.splice(add,remove,replace) method
+    let friend = ["Shakil","Vramar","Abid","Yamin","Shakinur","Sweet","Tuhin"];
+    friend.splice(2,3,"Shozib","Ahmed"); // (stating indx,Delet itme,New itme)
+    document.getElementById("read").innerHTML=friend;
+};
+// spli();
+// Create an array to stre commpanies (a)remove the first company from the array 
+// (b)remove uber & add ola in its place (c)add amazon at end
+function qsa(){
+    let companies = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+    companies.shift();
+    companies.splice(1, 1 ,"Ola"); // (stating indx,Delet itme,New itme)
+    companies.push("Amazon");
+    document.getElementById("read").innerHTML=companies;
+};
+// qsa();
