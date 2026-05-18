@@ -347,3 +347,59 @@ function qsa(){
     document.getElementById("read").innerHTML=companies;
 };
 // qsa();
+function myfunction(a,b){ // Parameter -> input (Me)
+    let me = a+b;
+    document.getElementById("read").innerHTML=me;
+};
+// myfunction(10,30); // Argument (10,30)
+function ret(x,y){ // The JavaScript return Function statement condition
+    let sum = x + y;
+    return sum;
+};
+// let output = ret(32,32);
+// document.getElementById("read").innerHTML=output;
+const myArro = (a, b)=>{ // The Modern JavaScript Arro function short calculation 
+    return a + b;
+};
+// let output = myArro(10,30);
+// document.getElementById("read").innerHTML=output;
+function countVowels(go){ // For-of loops arguments & return the count number of vowels
+    let count = 0;
+    for(i of go){
+        if(i === "a" || i === "e" || i === "i" || i === "o" || i === "u"){
+            count++;
+        };
+    } return count;
+};
+// let output = countVowels("Shozib Ahmed");
+// document.getElementById("read").innerHTML=output;
+const qarraf = (oop)=>{ // Arro function For-of loops arguments & return the count number of vowels
+    let count = 0;
+    for(let i of oop){
+        if(i==="a" || i==="e" || i==="i" || i==="o" || i==="u"){
+            count++;
+        };
+    }; return count;
+};
+// let output = qarraf("Weclome to JavaScript");
+// document.getElementById("read").innerHTML="vowels=" + output;
+function forEach(){ //itmes.forEach callback is a function passed as an argument to another function 
+    let output = "";
+    let city = ["Bheramara","Kushtia","Mirpur","Dhaka","Motijheel"];
+    city.forEach(function callbac(go){
+        output += go.toUpperCase() + "<br>";
+    });
+    document.getElementById("read").innerHTML=output;
+};
+// forEach();
+function forEachArro(){ // Arro itmes.forEach callback is a function passed as an argument to another function 
+    let output = "";
+    let point = [10,20,30,40,50,60,70,80,90,100];
+    point.forEach((go)=>{
+        output += go+"<br>";
+    });
+    document.getElementById("read").innerHTML=output;
+};
+// forEachArro();
+
+
