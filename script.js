@@ -358,7 +358,7 @@ function ret(x,y){ // The JavaScript return Function statement condition
 };
 // let output = ret(32,32);
 // document.getElementById("read").innerHTML=output;
-const myArro = (a, b)=>{ // The Modern JavaScript Arro function short calculation 
+const myArro = (a, b)=>{ // The Modern JavaScript Arrow function short calculation 
     return a + b;
 };
 // let output = myArro(10,30);
@@ -373,7 +373,7 @@ function countVowels(go){ // For-of loops arguments & return the count number of
 };
 // let output = countVowels("Shozib Ahmed");
 // document.getElementById("read").innerHTML=output;
-const qarraf = (oop)=>{ // Arro function For-of loops arguments & return the count number of vowels
+const qarraf = (oop)=>{ // Arrow function For-of loops arguments & return the count number of vowels
     let count = 0;
     for(let i of oop){
         if(i==="a" || i==="e" || i==="i" || i==="o" || i==="u"){
@@ -392,7 +392,7 @@ function forEach(){ //itmes.forEach callback is a function passed as an argument
     document.getElementById("read").innerHTML=output;
 };
 // forEach();
-function forEachArro(){ // Arro itmes.forEach callback is a function passed as an argument to another function 
+function forEachArro(){ // Arrow itmes.forEach callback is a function passed as an argument to another function 
     let output = "";
     let point = [10,20,30,40,50,60,70,80,90,100];
     point.forEach((go)=>{
@@ -401,5 +401,41 @@ function forEachArro(){ // Arro itmes.forEach callback is a function passed as a
     document.getElementById("read").innerHTML=output;
 };
 // forEachArro();
+function foreaceVlu(){ // Array Point the square of each value using the forEach() loop
+    let output = "";
+    let point = [240,343,432,539,612,729,882,923];
+    point.forEach(function arryPoin(go){
+        output += "Square value=" + go*go + "<br>";
+    });
+    document.getElementById("read").innerHTML=output;
+};
+// foreaceVlu();
+function arrayMap(){ // Arrow function Array.map() value its callback returns from new array
+    let lang = ["Bangla","English","Arabic","Spanish"];
+    let output = lang.map((value)=>{
+        return value.toUpperCase();
+    });
+    document.getElementById("read").innerHTML=output;
+};
+// arrayMap();
+function arrayFilter(){ // Array.filter() Array of elements that give true for a condition/filter
+    let number = [2,34,43,52,59,70,78,82,99];
+    let output = number.filter((value)=>{
+        // return value %2 === 0; // Even number
+        // return value %2 !== 0; // Odd number
+        return value > 34; // Odd number 
+    });
+    document.getElementById("read").innerHTML=output;
+};
+// arrayFilter();
+function arrayReduce(){ // Array.reduce() performs some operations & redusces the array to single value
+    let number = [78,82,99,43,52,59,70,];
+    let output = number.reduce((previous,currnt)=>{
+        return previous + currnt;
+        // return previous > currnt ? previous : currnt; // Big number 
+    });
+    document.getElementById("read").innerHTML=output;
+};
+// arrayReduce();
 
 
