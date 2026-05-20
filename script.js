@@ -437,5 +437,22 @@ function arrayReduce(){ // Array.reduce() performs some operations & redusces th
     document.getElementById("read").innerHTML=output;
 };
 // arrayReduce();
+function inpQus(){ // Qs 
+    let output = "";
+    let inputNu = prompt("Enter a number:");
+    let arr = [];
+    for(let i = 1; i <=  inputNu; i++){
+        arr[i-1] =i;
+    }
+    let ee = arr.reduce((previous,currnt)=>{
+        return previous + currnt;
+    });
+    let ees = arr.reduce((previous,currnt)=>{
+        return previous * currnt;
+    });
+    document.getElementById("read").innerHTML=ees;
+};
+// inpQus();
+
 
 
