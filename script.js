@@ -453,6 +453,19 @@ function inpQus(){ // Qs
     document.getElementById("read").innerHTML=ees;
 };
 // inpQus();
+function clasDom(){ // Dom manipulation Selection with className() Html colection return
+    let name = "Welcome To JavaScript";
+    const output = document.getElementsByClassName("go");
+    output[0].innerHTML=name;
+};
+// clasDom();
+function TagName(){ // Dom manipulation Selection with TagName() Html colection return
+    let name = "Welcome To JavaScript";
+    const output = document.getElementsByTagName("h2");
+    output[0].innerHTML=name;
+};
+// TagName();
+
 
 
 
