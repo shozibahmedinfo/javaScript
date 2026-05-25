@@ -465,7 +465,23 @@ function TagName(){ // Dom manipulation Selection with TagName() Html colection 
     output[0].innerHTML=name;
 };
 // TagName();
-
-
-
+function querySele(){ // Dom manipulation Selection with querySelector()
+    let name = "Welcome To JavaScript";
+    // const output = document.querySelector("div"); // div select 
+    // const output = document.querySelector(".go"); // .go class 
+    const output = document.querySelector("#go"); // #go id
+};
+// querySele();
+function innText(){ // Dom manipulation Selection with innerText()
+    let name = "Welcome To JavaScript";
+    let sms = document.getElementById("myButt").innerText;
+    // let sms = document.getElementById("myButt").textContent; // textContent returns hidden elements
+    document.getElementById("reads").innerHTML=sms;
+}
+// innText();
+function Qust(){ // Dom manipulation append “from Welcome to world” to this text using Js  
+    const get = document.getElementById("readd"); // html id get (readd)
+    get.innerText = get.innerText + "\t Welocome"; // innerText add text
+};
+// Qust();
 
